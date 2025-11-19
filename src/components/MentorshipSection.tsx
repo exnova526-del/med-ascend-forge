@@ -3,15 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Sparkles, Check } from "lucide-react";
 import annaProfile from "@/assets/anna-profile-latest.jpg";
-
 const MentorshipSection = () => {
-  const { ref: sectionRef, isVisible: sectionVisible } = useScrollReveal({
+  const {
+    ref: sectionRef,
+    isVisible: sectionVisible
+  } = useScrollReveal({
     threshold: 0.1,
-    triggerOnce: true,
+    triggerOnce: true
   });
-
-  return (
-    <section ref={sectionRef} className="py-20 sm:py-32 bg-gradient-to-b from-background to-muted/20">
+  return <section ref={sectionRef} className="py-20 sm:py-32 bg-gradient-to-b from-background to-muted/20">
       <div className="container px-4 sm:px-6 lg:px-8 max-w-6xl">
         {/* Section Header */}
         <div className={`text-center mb-12 transition-all duration-1000 ${sectionVisible ? 'animate-fade-down opacity-100' : 'opacity-0'}`}>
@@ -56,19 +56,12 @@ const MentorshipSection = () => {
 
                 {/* O que você vai receber */}
                 <div className="mb-8 space-y-4">
-                  {[
-                    "4 encontros individuais ao longo do ano",
-                    "Direcionamento personalizado",
-                    "Acompanhamento humano + técnico",
-                    "Kit exclusivo MED"
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-center gap-3">
+                  {["4 encontros individuais ao longo do ano", "Direcionamento personalizado", "Acompanhamento humano + técnico", "Kit exclusivo MED"].map((item, index) => <div key={index} className="flex items-center gap-3">
                       <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
                         <Check className="w-3 h-3 text-primary" />
                       </div>
                       <span className="font-crimson text-foreground/90">{item}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
 
                 {/* Bonus Badge */}
@@ -84,18 +77,14 @@ const MentorshipSection = () => {
                 <div className="space-y-4 mb-8">
                   <div className="flex items-baseline gap-3">
                     <span className="font-crimson text-muted-foreground text-lg font-normal">Investimento:</span>
-                    <span className="font-playfair font-bold text-primary text-3xl">R$ 1.297</span>
+                    <span className="font-playfair font-bold text-primary text-3xl">12x de R$134,14</span>
                   </div>
                   <p className="font-crimson text-sm text-muted-foreground">
                     Possibilidade de parcelamento diretamente pela plataforma
                   </p>
                 </div>
 
-                <Button 
-                  size="lg" 
-                  className="w-full sm:w-auto text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-playfair font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                  onClick={() => window.open('#', '_blank')}
-                >
+                <Button size="lg" className="w-full sm:w-auto text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-playfair font-semibold shadow-lg hover:shadow-xl transition-all duration-300" onClick={() => window.open('#', '_blank')}>
                   Garantir Minha Vaga na Mentoria
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -105,14 +94,14 @@ const MentorshipSection = () => {
         </div>
 
         {/* Bottom Message */}
-        <div className={`text-center mt-12 transition-all duration-1000 ${sectionVisible ? 'animate-fade-up opacity-100' : 'opacity-0'}`} style={{ animationDelay: '400ms' }}>
+        <div className={`text-center mt-12 transition-all duration-1000 ${sectionVisible ? 'animate-fade-up opacity-100' : 'opacity-0'}`} style={{
+        animationDelay: '400ms'
+      }}>
           <p className="font-crimson text-xl text-muted-foreground italic">
             "Os que confiam no processo voam mais alto. Sua jornada começa aqui."
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default MentorshipSection;

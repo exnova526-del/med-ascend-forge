@@ -34,16 +34,20 @@ const MentorshipSection = () => {
               </Badge>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-0">
-              {/* Image Side */}
-              <div className="relative h-[400px] md:h-auto">
-                <img src={annaProfile} alt="Anna Fontes Mentoria" className="w-full h-full object-cover" />
-              </div>
+            {/* Image Top */}
+            <div className="relative w-full">
+              <img src={annaProfile} alt="Anna Fontes Mentoria" className="w-full h-auto object-contain" />
+            </div>
 
-              {/* Content Side */}
-              <div className="p-8 sm:p-12 flex flex-col justify-center">
-                <div className="mb-8">
-                  <p className="font-crimson text-lg text-foreground/90 leading-relaxed mb-6">
+            {/* Content Bottom */}
+            <div className="p-8 sm:p-12">
+              <div className="max-w-4xl mx-auto">
+                <h3 className="font-playfair text-3xl sm:text-4xl font-bold text-primary mb-6 text-center">
+                  Mentoria Individual com Anna Fontes
+                </h3>
+                
+                <div className="mb-8 space-y-4">
+                  <p className="font-crimson text-lg text-foreground/90 leading-relaxed">
                     Estudar medicina é mais do que acumular conhecimento — é construir propósito, maturidade e direção. 
                     A mentoria individual foi criada para o estudante que deseja unir ciência, organização, constância e espiritualidade 
                     numa jornada de alta performance com profundidade e sentido.
@@ -54,13 +58,18 @@ const MentorshipSection = () => {
                 </div>
 
                 {/* O que você vai receber */}
-                <div className="mb-8 space-y-4">
-                  {["4 encontros individuais ao longo do ano", "Direcionamento personalizado", "Acompanhamento humano + técnico", "Kit exclusivo MED"].map((item, index) => <div key={index} className="flex items-center gap-3">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
-                        <Check className="w-3 h-3 text-primary" />
+                <div className="mb-8">
+                  <h4 className="font-playfair text-xl font-semibold text-primary mb-4">O que você vai receber:</h4>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    {["4 encontros individuais ao longo do ano", "Direcionamento personalizado", "Acompanhamento humano + técnico", "Kit exclusivo MED"].map((item, index) => (
+                      <div key={index} className="flex items-center gap-3">
+                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
+                          <Check className="w-3 h-3 text-primary" />
+                        </div>
+                        <span className="font-crimson text-foreground/90">{item}</span>
                       </div>
-                      <span className="font-crimson text-foreground/90">{item}</span>
-                    </div>)}
+                    ))}
+                  </div>
                 </div>
 
                 {/* Bonus Badge */}
@@ -73,22 +82,24 @@ const MentorshipSection = () => {
                   </p>
                 </div>
 
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-baseline gap-3">
-                    <span className="font-crimson text-muted-foreground text-lg font-normal">Investimento:</span>
-                    <span className="font-playfair font-bold text-primary text-3xl">12x de R$134,14</span>
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+                  <div className="space-y-2 text-center sm:text-left">
+                    <div className="flex items-baseline gap-3 justify-center sm:justify-start">
+                      <span className="font-crimson text-muted-foreground text-lg font-normal">Investimento:</span>
+                      <span className="font-playfair font-bold text-primary text-3xl">12x de R$134,14</span>
+                    </div>
+                    <p className="font-crimson text-sm text-muted-foreground">
+                      Possibilidade de parcelamento diretamente pela plataforma
+                    </p>
                   </div>
-                  <p className="font-crimson text-sm text-muted-foreground">
-                    Possibilidade de parcelamento diretamente pela plataforma
-                  </p>
-                </div>
 
-                <a href="https://pay.kiwify.com.br/csfDE3p" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="w-full sm:w-auto text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-playfair font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
-                    Garantir Minha Vaga na Mentoria
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </a>
+                  <a href="https://pay.kiwify.com.br/csfDE3p" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-playfair font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
+                      Garantir Minha Vaga na Mentoria
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

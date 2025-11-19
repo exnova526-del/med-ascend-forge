@@ -35,18 +35,18 @@ const MentorshipSection = () => {
             </div>
             
             {/* Image Top */}
-            <div className={`relative w-full transition-all duration-1000 ${sectionVisible ? 'animate-fade-in opacity-100' : 'opacity-0'}`}>
+            <div className="relative w-full">
               <img src={annaProfile} alt="Anna Fontes Mentoria" className="w-full h-auto object-contain" />
             </div>
 
             {/* Content Bottom */}
             <div className="p-8 sm:p-12">
               <div className="max-w-4xl mx-auto">
-                <h3 className={`font-playfair text-3xl sm:text-4xl font-bold text-primary mb-6 text-center transition-all duration-1000 ${sectionVisible ? 'animate-fade-up opacity-100' : 'opacity-0'}`} style={{ animationDelay: '200ms' }}>
+                <h3 className="font-playfair text-3xl sm:text-4xl font-bold text-primary mb-6 text-center">
                   Mentoria Individual com Anna Fontes
                 </h3>
                 
-                <div className={`mb-8 space-y-4 transition-all duration-1000 ${sectionVisible ? 'animate-fade-up opacity-100' : 'opacity-0'}`} style={{ animationDelay: '300ms' }}>
+                <div className="mb-8 space-y-4">
                   <p className="font-crimson text-lg text-foreground/90 leading-relaxed">
                     Estudar medicina é mais do que acumular conhecimento — é construir propósito, maturidade e direção. 
                     A mentoria individual foi criada para o estudante que deseja unir ciência, organização, constância e espiritualidade 
@@ -58,11 +58,11 @@ const MentorshipSection = () => {
                 </div>
 
                 {/* O que você vai receber */}
-                <div className={`mb-8 transition-all duration-1000 ${sectionVisible ? 'animate-fade-up opacity-100' : 'opacity-0'}`} style={{ animationDelay: '400ms' }}>
+                <div className="mb-8">
                   <h4 className="font-playfair text-xl font-semibold text-primary mb-4">O que você vai receber:</h4>
                   <div className="grid sm:grid-cols-2 gap-4">
                     {["4 encontros individuais ao longo do ano", "Direcionamento personalizado", "Acompanhamento humano + técnico", "Kit exclusivo MED"].map((item, index) => (
-                      <div key={index} className="flex items-center gap-3 transition-all duration-300 hover:translate-x-1">
+                      <div key={index} className="flex items-center gap-3">
                         <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
                           <Check className="w-3 h-3 text-primary" />
                         </div>
@@ -73,7 +73,7 @@ const MentorshipSection = () => {
                 </div>
 
                 {/* Bonus Badge */}
-                <div className={`mb-8 p-4 bg-primary/5 rounded-lg border border-primary/10 transition-all duration-1000 ${sectionVisible ? 'animate-scale-in opacity-100' : 'opacity-0'}`} style={{ animationDelay: '500ms' }}>
+                <div className="mb-8 p-4 bg-primary/5 rounded-lg border border-primary/10">
                   <p className="font-playfair font-semibold text-primary mb-2">
                     🎁 Bônus para os 5 primeiros inscritos
                   </p>
@@ -82,7 +82,7 @@ const MentorshipSection = () => {
                   </p>
                 </div>
 
-                <div className={`flex flex-col sm:flex-row items-center justify-between gap-6 transition-all duration-1000 ${sectionVisible ? 'animate-fade-up opacity-100' : 'opacity-0'}`} style={{ animationDelay: '600ms' }}>
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
                   <div className="space-y-2 text-center sm:text-left">
                     <div className="flex items-baseline gap-3 justify-center sm:justify-start">
                       <span className="font-crimson text-muted-foreground text-lg font-normal">Investimento:</span>
@@ -94,7 +94,7 @@ const MentorshipSection = () => {
                   </div>
 
                   <a href="https://pay.kiwify.com.br/csfDE3p" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-playfair font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-playfair font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
                       Garantir Minha Vaga na Mentoria
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>

@@ -38,7 +38,7 @@ const MentorshipSection = () => {
               {/* Image Side */}
               <div className="relative h-[400px] md:h-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 z-10" />
-                <img src={annaProfile} alt="Anna Fontes Mentoria" className="w-full h-full object-cover" />
+                <img src={annaProfile} alt="Anna Fontes Mentoria" className="w-full h-full object-contain" />
               </div>
 
               {/* Content Side */}

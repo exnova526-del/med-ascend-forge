@@ -2,7 +2,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Sparkles, Check } from "lucide-react";
-import annaProfile from "@/assets/anna-profile-latest.jpg";
+import annaProfile from "@/assets/anna-mentoria.png";
 const MentorshipSection = () => {
   const {
     ref: sectionRef,

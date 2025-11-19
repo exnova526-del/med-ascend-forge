@@ -84,10 +84,12 @@ const MentorshipSection = () => {
                   </p>
                 </div>
 
-                <Button size="lg" className="w-full sm:w-auto text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-playfair font-semibold shadow-lg hover:shadow-xl transition-all duration-300" onClick={() => window.open('#', '_blank')}>
-                  Garantir Minha Vaga na Mentoria
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                <a href="https://pay.kiwify.com.br/csfDE3p" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="w-full sm:w-auto text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-playfair font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
+                    Garantir Minha Vaga na Mentoria
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

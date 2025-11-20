@@ -57,7 +57,7 @@ const CoursesSection = () => {
                   </div>
                   <div className="flex items-baseline gap-3">
                     <span className="font-crimson text-muted-foreground text-lg font-normal">Investimento:</span>
-                    <span className="font-playfair font-bold text-primary text-3xl">12x de R$ 41,06</span>
+                    <span className="font-playfair font-bold text-primary text-3xl">12x de R$ 30,72</span>
                   </div>
                 </div>
 

@@ -61,14 +61,12 @@ const MentorshipSection = () => {
                 <div className="mb-8">
                   <h4 className="font-playfair text-xl font-semibold text-primary mb-4">O que você vai receber:</h4>
                   <div className="grid sm:grid-cols-2 gap-4">
-                    {["4 encontros individuais ao longo do ano", "Direcionamento personalizado", "Acompanhamento humano + técnico", "Kit exclusivo MED"].map((item, index) => (
-                      <div key={index} className="flex items-center gap-3">
+                    {["4 encontros individuais ao longo do ano", "Direcionamento personalizado", "Acompanhamento humano + técnico", "Kit exclusivo MED"].map((item, index) => <div key={index} className="flex items-center gap-3">
                         <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
                           <Check className="w-3 h-3 text-primary" />
                         </div>
                         <span className="font-crimson text-foreground/90">{item}</span>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                 </div>
 
@@ -86,7 +84,7 @@ const MentorshipSection = () => {
                   <div className="space-y-2 text-center sm:text-left">
                     <div className="flex items-baseline gap-3 justify-center sm:justify-start">
                       <span className="font-crimson text-muted-foreground text-lg font-normal">Investimento:</span>
-                      <span className="font-playfair font-bold text-primary text-3xl">12x de R$134,14</span>
+                      <span className="font-playfair font-bold text-primary text-3xl">12x de R$123,80</span>
                     </div>
                     <p className="font-crimson text-sm text-muted-foreground">
                       Possibilidade de parcelamento diretamente pela plataforma

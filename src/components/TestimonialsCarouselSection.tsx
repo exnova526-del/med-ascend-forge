@@ -45,8 +45,8 @@ const TestimonialsCarouselSection = ({ className = "" }: { className?: string })
           }} className="w-full">
               <CarouselContent className="-ml-2 md:-ml-4">
                 {testimonialImages.map((image, index) => <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4 py-0 px-0 mx-0">
-                    <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 aspect-[9/16] max-w-[280px] mx-auto">
-                      <img src={image} alt={`Depoimento de aluno ${index + 1}`} className="w-full h-full object-cover" />
+                    <div className="relative rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 bg-offWhite max-w-[280px] mx-auto">
+                      <img src={image} alt={`Depoimento de aluno ${index + 1}`} className="w-full h-auto object-contain rounded-2xl" />
                     </div>
                   </CarouselItem>)}
               </CarouselContent>

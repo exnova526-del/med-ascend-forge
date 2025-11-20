@@ -8,7 +8,8 @@ import testimonial3 from "@/assets/testimonial-3.jpg";
 import testimonial4 from "@/assets/testimonial-4.jpg";
 import testimonial5 from "@/assets/testimonial-5.jpg";
 import testimonial6 from "@/assets/testimonial-6.jpg";
-const testimonialImages = [testimonial1, testimonial2, testimonial3, testimonial4, testimonial5, testimonial6];
+import testimonialWhatsapp from "@/assets/testimonial-whatsapp.jpg";
+const testimonialImages = [testimonial1, testimonial2, testimonial3, testimonial4, testimonial5, testimonial6, testimonialWhatsapp];
 const TestimonialsCarouselSection = ({
   className = ""
 }: {

@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { Star } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useParallax } from "@/hooks/useParallax";
-import testimonialWhatsapp from "@/assets/testimonial-whatsapp.jpg";
 const testimonials = [{
   name: "Maria Silva",
   initials: "MS",
@@ -26,13 +25,6 @@ const testimonials = [{
   initials: "CE",
   course: "Método de Excelência e Desempenho",
   text: "Nunca imaginei que estudar medicina poderia ser tão organizado e eficiente. O método é completo e muito bem estruturado. Indico para qualquer estudante!",
-  rating: 5
-}, {
-  name: "Aluna MED",
-  initials: "AM",
-  course: "Mentoria Individual",
-  image: testimonialWhatsapp,
-  text: "Anna, meu depoimento passa por várias fases da minha trajetória, porque te acompanho desde o vestibular e você fez parte do meu crescimento em cada uma delas!",
   rating: 5
 }];
 const TestimonialsSection = () => {
@@ -60,18 +52,10 @@ const TestimonialsSection = () => {
           </div>
 
           <div ref={cardsRef} style={cardsParallax.style} className="grid sm:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => <div key={index} className={`bg-offWhite/5 backdrop-blur-sm rounded-lg ${testimonial.image ? 'p-0' : 'p-6'} border border-offWhite/10 hover:border-accent/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl group ${sectionVisible ? 'animate-scale-up opacity-100' : 'opacity-0'}`} style={{
+            {testimonials.map((testimonial, index) => <div key={index} className={`bg-offWhite/5 backdrop-blur-sm rounded-lg p-6 border border-offWhite/10 hover:border-accent/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl group ${sectionVisible ? 'animate-scale-up opacity-100' : 'opacity-0'}`} style={{
             animationDelay: sectionVisible ? `${index * 150}ms` : '0ms'
           }}>
-                {testimonial.image ? (
-                  <img 
-                    src={testimonial.image} 
-                    alt={`Depoimento de ${testimonial.name}`}
-                    className="w-full h-auto rounded-lg"
-                  />
-                ) : (
-                  <>
-                    <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-4 mb-4">
                       <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center border-2 border-accent/40 group-hover:border-accent transition-colors duration-300">
                         <span className="font-playfair font-bold text-accent text-lg">
                           {testimonial.initials}
@@ -88,16 +72,14 @@ const TestimonialsSection = () => {
                       "{testimonial.text}"
                     </p>
                     
-                    <div className="border-t border-offWhite/10 pt-4">
-                      <p className="font-playfair text-lg font-semibold text-offWhite">
-                        {testimonial.name}
-                      </p>
-                      <p className="font-crimson text-sm text-offWhite/60 mt-1">
-                        {testimonial.course}
-                      </p>
-                    </div>
-                  </>
-                )}
+                <div className="border-t border-offWhite/10 pt-4">
+                  <p className="font-playfair text-lg font-semibold text-offWhite">
+                    {testimonial.name}
+                  </p>
+                  <p className="font-crimson text-sm text-offWhite/60 mt-1">
+                    {testimonial.course}
+                  </p>
+                </div>
               </div>)}
           </div>
         </div>

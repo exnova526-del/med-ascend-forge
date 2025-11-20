@@ -9,7 +9,11 @@ import testimonial4 from "@/assets/testimonial-4.jpg";
 import testimonial5 from "@/assets/testimonial-5.jpg";
 import testimonial6 from "@/assets/testimonial-6.jpg";
 const testimonialImages = [testimonial1, testimonial2, testimonial3, testimonial4, testimonial5, testimonial6];
-const TestimonialsCarouselSection = ({ className = "" }: { className?: string }) => {
+const TestimonialsCarouselSection = ({
+  className = ""
+}: {
+  className?: string;
+}) => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const carouselParallax = useParallax(carouselRef, {
     speed: 0.3,
@@ -46,7 +50,7 @@ const TestimonialsCarouselSection = ({ className = "" }: { className?: string })
               <CarouselContent className="-ml-2 md:-ml-4">
                 {testimonialImages.map((image, index) => <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4 py-0 px-0 mx-0">
                     <div className="relative rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 bg-offWhite max-w-[280px] mx-auto">
-                      <img src={image} alt={`Depoimento de aluno ${index + 1}`} className="w-full h-auto object-contain rounded-2xl" />
+                      <img src={image} alt={`Depoimento de aluno ${index + 1}`} className="w-full h-auto object-contain w-full " />
                     </div>
                   </CarouselItem>)}
               </CarouselContent>

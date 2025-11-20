@@ -47,10 +47,10 @@ const TestimonialsCarouselSection = ({
             loop: true,
             align: "center"
           }} className="w-full">
-              <CarouselContent className="-ml-2 md:-ml-4">
-                {testimonialImages.map((image, index) => <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4 py-0 px-0 mx-0">
-                    <div className="relative rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 bg-offWhite max-w-[280px] mx-auto">
-                      <img src={image} alt={`Depoimento de aluno ${index + 1}`} className="w-full h-auto object-contain w-full " />
+              <CarouselContent className="-ml-3 md:-ml-6">
+                {testimonialImages.map((image, index) => <CarouselItem key={index} className="pl-3 md:pl-6 basis-full sm:basis-1/2 lg:basis-1/3">
+                    <div className="relative rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] bg-card p-2 sm:p-3 mx-auto max-w-[320px] sm:max-w-[280px] md:max-w-[300px]">
+                      <img src={image} alt={`Depoimento de aluno ${index + 1}`} className="w-full h-auto object-contain rounded-lg" />
                     </div>
                   </CarouselItem>)}
               </CarouselContent>

@@ -56,7 +56,7 @@ const AnnaProfileSection = () => {
                 <ul className="space-y-2 text-base">
                   <li className="flex items-start">
                     <span className="text-burgundy mr-2">•</span>
-                    <span>Medicina pela UFMG</span>
+                    <span>Acadêmica de medicina na UFMG</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-burgundy mr-2">•</span>

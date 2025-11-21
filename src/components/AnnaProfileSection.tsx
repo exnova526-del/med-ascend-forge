@@ -39,7 +39,7 @@ const AnnaProfileSection = () => {
             </h2>
             
             <div className="space-y-4 font-crimson text-lg text-foreground/80 leading-relaxed">
-              <p>Médica formada pela Universidade Federal de Minas Gerais (UFMG), com residência em Cirurgia Geral.</p>
+              <p>Acadêmica de medicina na pela Universidade Federal de Minas Gerais (UFMG).</p>
               
               <p>
                 Apaixonada pela educação médica e pelo desenvolvimento de futuros profissionais da saúde, Anna dedica-se a preparar estudantes de medicina para os desafios das provas de residência.

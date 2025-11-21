@@ -42,10 +42,8 @@ const AnnaProfileSection = () => {
               
               
               <p>
-                Acadêmica de medicina  na  Universidade Federal de Minas Gerais (UFMG). 
-Apaixonada pela educação médica e pelo desenvolvimento de futuros profissionais da saúde, Anna dedica-se a preparar estudantes de medicina para as oportunidades extracurriculares que irão abrir portas para um futuro de excelência na medicina, como fizeram com ela. 
-
-Sua missão é transformar o estudo em uma jornada de excelência, combinando conhecimento técnico, estratégia e disciplina para que cada aluno alcance seus objetivos.
+                Acadêmica de medicina na Universidade Federal de Minas Gerais (UFMG). Apaixonada pela educação médica e pelo desenvolvimento de futuros profissionais da saúde, Anna dedica-se a preparar estudantes de medicina para as oportunidades extracurriculares que irão abrir portas para um futuro de excelência na medicina, como fizeram com ela.
+ Sua missão é transformar o estudo em uma jornada de excelência, combinando conhecimento técnico, estratégia e disciplina para que cada aluno alcance seus objetivos.
               </p>
               
               

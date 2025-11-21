@@ -20,7 +20,7 @@ const Index = () => {
       <GalleryCarouselSection />
       <MentorshipSection />
       <TestimonialsCarouselSection className="bg-slate-50" />
-      <TestimonialsSection />
+      
       <CTASection />
       <ContactSection />
       <FooterSection />

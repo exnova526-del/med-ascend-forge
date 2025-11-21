@@ -39,15 +39,16 @@ const AnnaProfileSection = () => {
             </h2>
             
             <div className="space-y-4 font-crimson text-lg text-foreground/80 leading-relaxed">
-              <p>Acadêmica de medicina na pela Universidade Federal de Minas Gerais (UFMG).</p>
+              
               
               <p>
-                Apaixonada pela educação médica e pelo desenvolvimento de futuros profissionais da saúde, Anna dedica-se a preparar estudantes de medicina para os desafios das provas de residência.
+                Acadêmica de medicina  na  Universidade Federal de Minas Gerais (UFMG). 
+Apaixonada pela educação médica e pelo desenvolvimento de futuros profissionais da saúde, Anna dedica-se a preparar estudantes de medicina para as oportunidades extracurriculares que irão abrir portas para um futuro de excelência na medicina, como fizeram com ela. 
+
+Sua missão é transformar o estudo em uma jornada de excelência, combinando conhecimento técnico, estratégia e disciplina para que cada aluno alcance seus objetivos.
               </p>
               
-              <p>
-                Sua missão é transformar o estudo em uma jornada de excelência, combinando conhecimento técnico, estratégia e disciplina para que cada aluno alcance seus objetivos.
-              </p>
+              
 
               <div className="pt-6 mt-8">
                 <h3 className="font-playfair text-2xl font-semibold text-primary mb-4">

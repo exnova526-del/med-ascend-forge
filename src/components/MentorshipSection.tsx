@@ -87,7 +87,7 @@ const MentorshipSection = () => {
                       <span className="font-playfair font-bold text-primary text-3xl">12x de R$134,14</span>
                     </div>
                     <p className="font-crimson text-sm text-muted-foreground">
-                      Possibilidade de parcelamento diretamente pela plataforma
+                      Possibilidade de parcelamento diretamente pela plataforma.
                     </p>
                   </div>
 

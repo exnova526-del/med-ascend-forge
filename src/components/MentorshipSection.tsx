@@ -84,7 +84,7 @@ const MentorshipSection = () => {
                   <div className="space-y-2 text-center sm:text-left">
                     <div className="flex items-baseline gap-3 justify-center sm:justify-start">
                       <span className="font-crimson text-muted-foreground text-lg font-normal">Investimento:</span>
-                      <span className="font-playfair font-bold text-primary text-3xl">12x de R$123,80</span>
+                      <span className="font-playfair font-bold text-primary text-3xl">12x de R$134,14</span>
                     </div>
                     <p className="font-crimson text-sm text-muted-foreground">
                       Possibilidade de parcelamento diretamente pela plataforma
